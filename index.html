@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        ['fetch', 'Request', 'Response', 'Headers', 'FormData'].forEach(function(prop) {
+          try {
+            var val = window[prop];
+            Object.defineProperty(window, prop, {
+              get: function() { return val; },
+              set: function(newVal) { val = newVal; },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e) {
+            try {
+              window[prop] = window[prop];
+            } catch (_) {}
+          }
+        });
+      })();
+    </script>
+    <title>好農方舟 - 智慧農業電商行情統計系統</title>
+    <meta name="description" content="整合在地優質小農產銷市集、農業部即時交易行情、生產統計大數據分析、文章 MCP (Model Context Protocol) 智慧功能模組與完整後台管理之現代化智慧農業營運系統，支援 PHP 8.1 CodeIgniter 3 營運原始碼打包匯出。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-200 selection:text-emerald-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

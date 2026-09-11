@@ -1,0 +1,6 @@
+{
+  "name": "好農方舟 - 智慧農業電商行情統計系統",
+  "description": "整合在地優質小農產銷市集、農業部即時交易行情、生產統計大數據分析、文章 MCP (Model Context Protocol) 智慧功能模組與完整後台管理之現代化智慧農業營運系統，支援 PHP 8.1 CodeIgniter 3 營運原始碼打包匯出。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
